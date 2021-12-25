@@ -1,5 +1,7 @@
 var vid = document.getElementById("myVideo");
-
+var vid2 = document.getElementById("myVideo2");
+var vid3 = document.getElementById("myVideo3");
+var vid4 = document.getElementById("myVideo4");
 var fillBar = document.getElementById("fill");
 
 var currentTime = document.getElementById("currentTime");

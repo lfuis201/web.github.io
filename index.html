@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="vid/icono.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>Feliz Navidad</title>
+</head>
+<body>
+    
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div id="main">
+                        <div id="videoPanel">
+                            <video id="myVideo" width="625" height="400" src="vid/vid1.mp4"></video>
+                        </div>    
+                        
+                        <div id="controls">
+                            <div id="seek-bar">
+                                <div id="fill"></div>
+                            </div>
+                            
+                            <table border="0">
+                                <tr>
+                                    <td width="55%">
+                                        <div id="currentTime">00:00 / 00:00</div>
+                                    </td>
+                                    <td width="30%">
+                                        <img src="vid/Play.png" onclick="playOrPause()" id="playBtn"/>
+                                    </td>
+                                    <td>
+                                        <img src="vid/Speaker.png" id="speaker"/>
+                                    </td>
+                                    <td>
+                                        <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="main">
+                        <div id="videoPanel">
+                            <video id="myVideo" width="625" height="400" src="vid/vid2.mp4"></video>
+                        </div>    
+                        
+                        <div id="controls">
+                            <div id="seek-bar">
+                                <div id="fill"></div>
+                            </div>
+                            
+                            <table border="0">
+                                <tr>
+                                    <td width="55%">
+                                        <div id="currentTime">00:00 / 00:00</div>
+                                    </td>
+                                    <td width="30%">
+                                        <img src="vid/Play.png" onclick="playOrPause()" id="playBtn"/>
+                                    </td>
+                                    <td>
+                                        <img src="vid/Speaker.png" id="speaker"/>
+                                    </td>
+                                    <td>
+                                        <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="main">
+                        <div id="videoPanel">
+                            <video id="myVideo" width="625" height="400" src="vid/vid3.mp4"></video>
+                        </div>    
+                        
+                        <div id="controls">
+                            <div id="seek-bar">
+                                <div id="fill"></div>
+                            </div>
+                            
+                            <table border="0">
+                                <tr>
+                                    <td width="55%">
+                                        <div id="currentTime">00:00 / 00:00</div>
+                                    </td>
+                                    <td width="30%">
+                                        <img src="vid/Play.png" onclick="playOrPause()" id="playBtn"/>
+                                    </td>
+                                    <td>
+                                        <img src="vid/Speaker.png" id="speaker"/>
+                                    </td>
+                                    <td>
+                                        <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="main">
+                        <div id="videoPanel">
+                            <video id="myVideo" width="625" height="400" src="vid/vid4.mp4"></video>
+                        </div>    
+                        
+                        <div id="controls">
+                            <div id="seek-bar">
+                                <div id="fill"></div>
+                            </div>
+                            
+                            <table border="0">
+                                <tr>
+                                    <td width="55%">
+                                        <div id="currentTime">00:00 / 00:00</div>
+                                    </td>
+                                    <td width="30%">
+                                        <img src="vid/Play.png" onclick="playOrPause()" id="playBtn"/>
+                                    </td>
+                                    <td>
+                                        <img src="vid/Speaker.png" id="speaker"/>
+                                    </td>
+                                    <td>
+                                        <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide',{
+                width : '100vw',
+		        height: '100vh',
+            }
+             ).mount();
+        } );
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
